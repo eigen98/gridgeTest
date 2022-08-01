@@ -14,6 +14,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        //자동 로그인 구현 이전엔 바로 로그인화면 보여주기(임시)
+        presentLoginView()
+        
+    }
+    
+    //로그인 화면 present
+    func presentLoginView(){
+        guard let viewController = self.storyboard?.instantiateViewController(identifier: "LoginVC") else { return }
+            self.present(viewController, animated: true, completion: nil)
     }
 
 

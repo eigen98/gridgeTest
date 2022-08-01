@@ -49,7 +49,7 @@
         <!--LoginVC-->
         <scene sceneID="bFD-Aw-enp">
             <objects>
-                <viewController id="SWq-hn-k5U" customClass="LoginVC" customModule="InstagramChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="SWq-hn-k5U" customClass="LoginVC" customModule="InstagramChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ntn-vS-yWc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,31 +299,193 @@
             <point key="canvasLocation" x="1832" y="80"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="NXh-bY-Qpm">
+        <scene sceneID="yDf-OE-ej8">
             <objects>
-                <viewController id="fR6-RX-kVy" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gdX-Pi-lpT">
+                <viewController id="DuV-GY-KDr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fX5-De-sXA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호 또는 이메일 주소 입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoT-kM-UUc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호 또는 이메일 주소 입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKk-4Z-qhl">
                                 <rect key="frame" x="56" y="124" width="302.5" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="bpv-cn-gaA"/>
+                        <viewLayoutGuide key="safeArea" id="73t-J7-XIB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OoT-kM-UUc" firstAttribute="centerX" secondItem="gdX-Pi-lpT" secondAttribute="centerX" id="csF-yk-I1V"/>
-                            <constraint firstItem="OoT-kM-UUc" firstAttribute="top" secondItem="bpv-cn-gaA" secondAttribute="top" constant="80" id="dwm-hE-hkw"/>
+                            <constraint firstItem="bKk-4Z-qhl" firstAttribute="centerX" secondItem="fX5-De-sXA" secondAttribute="centerX" id="Hu0-Mc-7XM"/>
+                            <constraint firstItem="bKk-4Z-qhl" firstAttribute="top" secondItem="73t-J7-XIB" secondAttribute="top" constant="80" id="PIt-fz-Bbs"/>
                         </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sua-Tw-uFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2645" y="80"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NXh-bY-Qpm">
+            <objects>
+                <viewController id="fR6-RX-kVy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gdX-Pi-lpT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bpv-cn-gaA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ta0-Bg-AnD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2454" y="836"/>
+            <point key="canvasLocation" x="3458" y="74"/>
+        </scene>
+        <!--Email SignVC-->
+        <scene sceneID="f4Q-vq-cqT">
+            <objects>
+                <viewController storyboardIdentifier="EmailSignVC" id="DQr-wH-7oS" customClass="EmailSignVC" customModule="InstagramChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3YG-4h-naL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일은 진행하지 않습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqp-IO-I6U">
+                                <rect key="frame" x="68.5" y="207" width="277" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="06E-Md-n65"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xqp-IO-I6U" firstAttribute="centerX" secondItem="3YG-4h-naL" secondAttribute="centerX" id="WrG-cN-73D"/>
+                            <constraint firstItem="xqp-IO-I6U" firstAttribute="top" secondItem="06E-Md-n65" secondAttribute="top" constant="163" id="lcY-1G-Vfh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVo-8R-WhY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4348" y="467"/>
+        </scene>
+        <!--Phone SignVC-->
+        <scene sceneID="fpq-vm-OyN">
+            <objects>
+                <viewController storyboardIdentifier="PhoneSignVC" id="oUa-bX-UjW" customClass="PhoneSignVC" customModule="InstagramChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FaS-T6-Ktf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jjs-aX-39a">
+                                <rect key="frame" x="32" y="76" width="350" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KR +82" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmX-Ex-rmJ">
+                                        <rect key="frame" x="16" y="11.5" width="57" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemCyanColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZ9-zY-8oD">
+                                        <rect key="frame" x="89" y="8" width="2" height="28"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="2" id="Wtm-Ck-42K"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3B-aG-qJk">
+                                        <rect key="frame" x="107" y="8" width="227" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="05K-BZ-zFt"/>
+                                    <constraint firstItem="b3B-aG-qJk" firstAttribute="top" secondItem="Jjs-aX-39a" secondAttribute="top" constant="8" id="0Ly-5W-fTa"/>
+                                    <constraint firstItem="nmX-Ex-rmJ" firstAttribute="leading" secondItem="Jjs-aX-39a" secondAttribute="leading" constant="16" id="7Lj-jx-eJl"/>
+                                    <constraint firstAttribute="trailing" secondItem="b3B-aG-qJk" secondAttribute="trailing" constant="16" id="ALf-NL-IDi"/>
+                                    <constraint firstItem="RZ9-zY-8oD" firstAttribute="leading" secondItem="nmX-Ex-rmJ" secondAttribute="trailing" constant="16" id="Bpf-8s-SuN"/>
+                                    <constraint firstItem="RZ9-zY-8oD" firstAttribute="top" secondItem="Jjs-aX-39a" secondAttribute="top" constant="8" id="HDP-gl-GH5"/>
+                                    <constraint firstItem="b3B-aG-qJk" firstAttribute="leading" secondItem="RZ9-zY-8oD" secondAttribute="trailing" constant="16" id="LJG-W8-0Wk"/>
+                                    <constraint firstAttribute="bottom" secondItem="RZ9-zY-8oD" secondAttribute="bottom" constant="8" id="Z4u-TE-KA9"/>
+                                    <constraint firstAttribute="bottom" secondItem="b3B-aG-qJk" secondAttribute="bottom" constant="8" id="cNa-md-Tju"/>
+                                    <constraint firstItem="nmX-Ex-rmJ" firstAttribute="centerY" secondItem="Jjs-aX-39a" secondAttribute="centerY" id="imn-yj-JNo"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78s-Bz-UYG">
+                                <rect key="frame" x="32" y="136" width="350" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nDM-Ko-X6Z"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="login_next_disable_btn_img"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보안 및 로그인 목적으로 Instagram에서 보내는 SMS 알림을 수신할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgV-tj-6N6">
+                                <rect key="frame" x="34" y="200" width="346" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="346" id="1l3-nh-Dve"/>
+                                    <constraint firstAttribute="height" constant="52" id="p5p-fm-LQl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQX-m7-IQe">
+                                <rect key="frame" x="32" y="312.5" width="350" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="DFS-ak-Xd4"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="kakao_login_btn_img"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="또는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs2-c4-LvM">
+                                <rect key="frame" x="192.5" y="272" width="29.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyj-D2-l4l">
+                                <rect key="frame" x="16" y="281.5" width="160.5" height="2"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="E73-YG-dLF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jp5-u6-3hO">
+                                <rect key="frame" x="238" y="281.5" width="156" height="2"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="WtO-bc-KVu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qef-kG-2x7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qef-kG-2x7" firstAttribute="trailing" secondItem="78s-Bz-UYG" secondAttribute="trailing" constant="32" id="0Jf-sl-mXh"/>
+                            <constraint firstItem="kgV-tj-6N6" firstAttribute="top" secondItem="78s-Bz-UYG" secondAttribute="bottom" constant="20" id="0ox-Ia-tAV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jp5-u6-3hO" secondAttribute="trailing" id="4CH-QL-ztu"/>
+                            <constraint firstItem="Jp5-u6-3hO" firstAttribute="leading" secondItem="fs2-c4-LvM" secondAttribute="trailing" constant="16" id="Exo-ye-BuB"/>
+                            <constraint firstItem="fs2-c4-LvM" firstAttribute="top" secondItem="kgV-tj-6N6" secondAttribute="bottom" constant="20" id="JVy-pJ-8ah"/>
+                            <constraint firstItem="jyj-D2-l4l" firstAttribute="leading" secondItem="FaS-T6-Ktf" secondAttribute="leading" constant="16" id="Nru-5K-JlK"/>
+                            <constraint firstItem="fs2-c4-LvM" firstAttribute="leading" secondItem="jyj-D2-l4l" secondAttribute="trailing" constant="16" id="YWN-8o-x0R"/>
+                            <constraint firstItem="qef-kG-2x7" firstAttribute="trailing" secondItem="Jjs-aX-39a" secondAttribute="trailing" constant="32" id="Yf2-m0-4ox"/>
+                            <constraint firstItem="fs2-c4-LvM" firstAttribute="centerX" secondItem="FaS-T6-Ktf" secondAttribute="centerX" id="ZL4-qE-GaR"/>
+                            <constraint firstItem="OQX-m7-IQe" firstAttribute="leading" secondItem="qef-kG-2x7" secondAttribute="leading" constant="32" id="f3A-RE-hlI"/>
+                            <constraint firstItem="Jjs-aX-39a" firstAttribute="top" secondItem="qef-kG-2x7" secondAttribute="top" constant="32" id="g7v-Le-vQX"/>
+                            <constraint firstItem="78s-Bz-UYG" firstAttribute="leading" secondItem="qef-kG-2x7" secondAttribute="leading" constant="32" id="h9P-cB-aZC"/>
+                            <constraint firstItem="OQX-m7-IQe" firstAttribute="top" secondItem="fs2-c4-LvM" secondAttribute="bottom" constant="20" id="iOU-cS-y7a"/>
+                            <constraint firstItem="Jjs-aX-39a" firstAttribute="leading" secondItem="qef-kG-2x7" secondAttribute="leading" constant="32" id="jWg-Dj-xSK"/>
+                            <constraint firstItem="kgV-tj-6N6" firstAttribute="centerX" secondItem="FaS-T6-Ktf" secondAttribute="centerX" id="jh6-bz-t97"/>
+                            <constraint firstItem="Jp5-u6-3hO" firstAttribute="centerY" secondItem="fs2-c4-LvM" secondAttribute="centerY" id="kCT-3h-NWY"/>
+                            <constraint firstItem="jyj-D2-l4l" firstAttribute="centerY" secondItem="fs2-c4-LvM" secondAttribute="centerY" id="km9-Ie-yI9"/>
+                            <constraint firstItem="qef-kG-2x7" firstAttribute="trailing" secondItem="OQX-m7-IQe" secondAttribute="trailing" constant="32" id="obU-5h-pjQ"/>
+                            <constraint firstItem="78s-Bz-UYG" firstAttribute="top" secondItem="Jjs-aX-39a" secondAttribute="bottom" constant="16" id="oop-TH-z1S"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUL-4g-uob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4329" y="-196"/>
         </scene>
     </scenes>
     <resources>
@@ -331,6 +493,7 @@
         <image name="insta_text_logo" width="356" height="116"/>
         <image name="kakao_login_btn_img" width="458" height="78"/>
         <image name="login_btn_img" width="678" height="92"/>
+        <image name="login_next_disable_btn_img" width="604" height="94"/>
         <image name="meta_logo_img" width="152" height="84"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -340,6 +503,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
