@@ -19,6 +19,7 @@
 		EEAF6AE52895859000453AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE42895859000453AAA /* Assets.xcassets */; };
 		EEAF6AE82895859000453AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE62895859000453AAA /* LaunchScreen.storyboard */; };
 		EEE0EC8A28963E4B007ED8AA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0EC8928963E4B007ED8AA /* LoginVC.swift */; };
+		EEFE505C2898F23D00B7247F /* SignUpChoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE505B2898F23D00B7247F /* SignUpChoiceVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EEAF6AE72895859000453AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEAF6AE92895859000453AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEE0EC8928963E4B007ED8AA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EEFE505B2898F23D00B7247F /* SignUpChoiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpChoiceVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				EE11DAA7289790B400410CC0 /* PhoneSignVC.swift */,
 				EE11DAA9289790BB00410CC0 /* EmailSignVC.swift */,
 				EE11DAAC28979FF500410CC0 /* SignUpMainVC.swift */,
+				EEFE505B2898F23D00B7247F /* SignUpChoiceVC.swift */,
 			);
 			path = SignUpScene;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				EE11DAA62897905200410CC0 /* SignUpTabmanVC.swift in Sources */,
 				EEE0EC8A28963E4B007ED8AA /* LoginVC.swift in Sources */,
 				EEAF6ADE2895858D00453AAA /* SceneDelegate.swift in Sources */,
+				EEFE505C2898F23D00B7247F /* SignUpChoiceVC.swift in Sources */,
 				EE11DAAA289790BB00410CC0 /* EmailSignVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,14 +426,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q57K6D2JP2;
+				DEVELOPMENT_TEAM = FXFMS96RM6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -438,8 +444,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.gridgeTest.ios.InstagraChallenge.InstagramChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.gridgeTest.ios.InstagraChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -454,12 +461,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q57K6D2JP2;
+				DEVELOPMENT_TEAM = FXFMS96RM6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -468,7 +476,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.gridgeTest.ios.InstagraChallenge.InstagramChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.gridgeTest.ios.InstagraChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

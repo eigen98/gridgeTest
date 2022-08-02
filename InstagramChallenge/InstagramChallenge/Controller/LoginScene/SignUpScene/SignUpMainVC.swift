@@ -14,8 +14,13 @@ class SignUpMainVC : UIViewController{
     
     
     var tabContainer = UIView()
-    var tabmanVC = SignUpTabmanVC()
+    var tabmanVC = SignUpTabmanVC() //탭맨 뷰컨(전화번호, 이메일)
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.backgroundColor = .white
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()

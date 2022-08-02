@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InstagramChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="InstagramChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
         <!--LoginVC-->
         <scene sceneID="bFD-Aw-enp">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="SWq-hn-k5U" customClass="LoginVC" customModule="InstagramChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SWq-hn-k5U" customClass="LoginVC" customModule="InstagramChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ntn-vS-yWc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,6 +122,9 @@
                                         <rect key="frame" x="101" y="0.0" width="72.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="가입하기"/>
+                                        <connections>
+                                            <action selector="tapSignUpBtn:" destination="SWq-hn-k5U" eventType="touchUpInside" id="4Nq-BT-p9K"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -180,15 +183,18 @@
                             <constraint firstItem="dpd-3m-Hh4" firstAttribute="top" secondItem="HMG-4h-GIo" secondAttribute="bottom" constant="32" id="y7I-Bx-iV4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="signUpBtn" destination="j3V-BG-egD" id="8jr-yT-DUk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b46-7U-1rw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="931.88405797101461" y="79.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up ChoiceVC-->
         <scene sceneID="9eO-LO-C04">
             <objects>
-                <viewController id="VtR-Wi-9oi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpChoiceVC" id="VtR-Wi-9oi" customClass="SignUpChoiceVC" customModule="InstagramChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dis-Nc-7vP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,20 +247,23 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="휴대폰 번호 또는 이메일 주소로 가입"/>
+                                <connections>
+                                    <action selector="tapPhoneEmailSignUpBtn:" destination="VtR-Wi-9oi" eventType="touchUpInside" id="ZHk-qJ-M8p"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Snh-Ed-EJo">
-                                <rect key="frame" x="120.5" y="831" width="173.5" height="31"/>
+                                <rect key="frame" x="114.5" y="831" width="185.5" height="31"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 없으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck2-tS-yZE">
-                                        <rect key="frame" x="0.0" y="0.0" width="93" height="31"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미 계정이 있으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck2-tS-yZE">
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNm-BA-lys">
-                                        <rect key="frame" x="101" y="0.0" width="72.5" height="31"/>
+                                        <rect key="frame" x="125" y="0.0" width="60.5" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="가입하기"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="로그인"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -298,10 +307,10 @@
             </objects>
             <point key="canvasLocation" x="1832" y="80"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up MainVC-->
         <scene sceneID="yDf-OE-ej8">
             <objects>
-                <viewController id="DuV-GY-KDr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpMainVC" id="DuV-GY-KDr" customClass="SignUpMainVC" customModule="InstagramChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fX5-De-sXA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

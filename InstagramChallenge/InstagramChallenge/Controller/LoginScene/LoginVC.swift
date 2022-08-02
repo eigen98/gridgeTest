@@ -7,11 +7,17 @@
 
 import Foundation
 import UIKit
-
+//로그인화면
 class LoginVC : UIViewController {
     
     
-    
+    //가입하기 버튼
+    @IBOutlet weak var signUpBtn: UIButton!
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.backgroundColor = .white
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +38,12 @@ class LoginVC : UIViewController {
         
         
     }
-    
+    //가입하기 버튼 클릭 이벤트 (-> 가입 방법 선택 화면 전환)
+    @IBAction func tapSignUpBtn(_ sender: UIButton) {
+        guard let signupMainVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpChoiceVC") else { return }
+        signupMainVC.modalPresentationStyle = .fullScreen
+        present(signupMainVC, animated: false)
+    }
     
     
     

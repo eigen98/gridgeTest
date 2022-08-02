@@ -30,6 +30,19 @@ class SignUpTabmanVC : TabmanViewController {
             let bar = TMBar.ButtonBar()
             bar.layout.transitionStyle = .snap // Customize
 
+            bar.layout.alignment = .centerDistributed // .center시 선택된 탭이 가운데로 오게 됨.
+            bar.layout.contentMode = .fit
+            
+            // 인디케이터 조정
+            bar.indicator.weight = .light
+            bar.indicator.tintColor = .black
+            bar.indicator.overscrollBehavior = .compress
+            bar.layout.alignment = .centerDistributed
+            
+            bar.layout.interButtonSpacing = 35 // 버튼 사이 간격
+            
+            bar.layout.transitionStyle = .snap // Customize
+            
             // Add to view
             addBar(bar, dataSource: self, at: .top)
         }
@@ -39,10 +52,21 @@ class SignUpTabmanVC : TabmanViewController {
 
 extension SignUpTabmanVC: PageboyViewControllerDataSource, TMBarDataSource {
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
-        let item = TMBarItem(title: "")
-        item.title = "Page \(index)"
-        item.image = UIImage(named: "image.png")
-        // ↑↑ 이미지는 이따가 탭바 형식으로 보여줄 때 사용할 것이니 "이미지가 왜 있지?" 하지말고 넘어가주세요.
+        
+        var item = TMBarItem(title: "")
+       
+        
+        switch index {
+        case 0 :
+            item = TMBarItem(title: "전화번호")
+            break
+        case 1 :
+            item = TMBarItem(title: "이메일")
+        default:
+            item = TMBarItem(title: "00")
+        }
+        
+        
         
         return item
     }
