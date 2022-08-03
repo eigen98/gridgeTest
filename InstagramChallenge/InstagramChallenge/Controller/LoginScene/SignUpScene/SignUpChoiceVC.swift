@@ -16,7 +16,8 @@ class SignUpChoiceVC : UIViewController {
     //휴대폰, email로 가입 버튼 클릭 이벤트
     @IBAction func tapPhoneEmailSignUpBtn(_ sender: UIButton) {
         guard let signupMainVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpMainVC") else {return }
-        signupMainVC.modalPresentationStyle = .fullScreen
-        self.present(signupMainVC, animated: false)
+        
+        self.navigationController?.pushViewController(signupMainVC, animated: false)
+        
     }
 }

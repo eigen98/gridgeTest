@@ -34,15 +34,16 @@ class LoginVC : UIViewController {
         sheet.addAction(UIAlertAction(title: "가입하기", style: .destructive, handler: { _ in print("가입하기 클릭") }))
                 
         sheet.addAction(UIAlertAction(title: "다시 시도", style: .cancel, handler: { _ in print("다시 시도 클릭") }))
-        
-        
-        
     }
+    
     //가입하기 버튼 클릭 이벤트 (-> 가입 방법 선택 화면 전환)
     @IBAction func tapSignUpBtn(_ sender: UIButton) {
-        guard let signupMainVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpChoiceVC") else { return }
-        signupMainVC.modalPresentationStyle = .fullScreen
-        present(signupMainVC, animated: false)
+        guard let signupChoiceVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpChoiceVC") else { return }
+
+        let naviVC = UINavigationController(rootViewController: signupChoiceVC)
+        naviVC.modalPresentationStyle = .fullScreen
+        self.present(naviVC, animated: false)
+        
     }
     
     

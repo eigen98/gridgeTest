@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-//회원가입 화면 최상위 뷰
+//회원가입 화면 최상위 뷰(전화번호, 이메일)
 class SignUpMainVC : UIViewController{
     
     
@@ -25,6 +25,7 @@ class SignUpMainVC : UIViewController{
         super.viewDidLoad()
         layout()
         
+       
         
     }
     func layout(){

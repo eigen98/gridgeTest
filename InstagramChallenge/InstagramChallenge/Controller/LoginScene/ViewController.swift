@@ -25,8 +25,6 @@ class ViewController: UIViewController {
             //자동 로그인 구현 이전엔 바로 로그인화면 보여주기(임시)
             self.presentLoginView()
         }
-        
-        
     }
     
     //로그인 화면 present

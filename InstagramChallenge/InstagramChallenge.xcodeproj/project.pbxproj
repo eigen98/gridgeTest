@@ -12,12 +12,17 @@
 		EE11DAA8289790B400410CC0 /* PhoneSignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11DAA7289790B400410CC0 /* PhoneSignVC.swift */; };
 		EE11DAAA289790BB00410CC0 /* EmailSignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11DAA9289790BB00410CC0 /* EmailSignVC.swift */; };
 		EE11DAAD28979FF500410CC0 /* SignUpMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11DAAC28979FF500410CC0 /* SignUpMainVC.swift */; };
+		EE2FF7F1289A4455000349E1 /* TextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2FF7F0289A4455000349E1 /* TextField+.swift */; };
+		EE2FF7F3289A44A4000349E1 /* InputNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2FF7F2289A44A4000349E1 /* InputNameVC.swift */; };
+		EE2FF7F5289A44CF000349E1 /* InputPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2FF7F4289A44CF000349E1 /* InputPasswordVC.swift */; };
+		EE2FF7F7289A44F5000349E1 /* InputBirthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2FF7F6289A44F5000349E1 /* InputBirthVC.swift */; };
 		EEAF6ADC2895858D00453AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF6ADB2895858D00453AAA /* AppDelegate.swift */; };
 		EEAF6ADE2895858D00453AAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF6ADD2895858D00453AAA /* SceneDelegate.swift */; };
 		EEAF6AE02895858D00453AAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF6ADF2895858D00453AAA /* ViewController.swift */; };
 		EEAF6AE32895858D00453AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE12895858D00453AAA /* Main.storyboard */; };
 		EEAF6AE52895859000453AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE42895859000453AAA /* Assets.xcassets */; };
 		EEAF6AE82895859000453AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE62895859000453AAA /* LaunchScreen.storyboard */; };
+		EEB89671289A323700614E0C /* InputCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89670289A323700614E0C /* InputCodeVC.swift */; };
 		EEE0EC8A28963E4B007ED8AA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0EC8928963E4B007ED8AA /* LoginVC.swift */; };
 		EEFE505C2898F23D00B7247F /* SignUpChoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE505B2898F23D00B7247F /* SignUpChoiceVC.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +35,10 @@
 		EE11DAA7289790B400410CC0 /* PhoneSignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSignVC.swift; sourceTree = "<group>"; };
 		EE11DAA9289790BB00410CC0 /* EmailSignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignVC.swift; sourceTree = "<group>"; };
 		EE11DAAC28979FF500410CC0 /* SignUpMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMainVC.swift; sourceTree = "<group>"; };
+		EE2FF7F0289A4455000349E1 /* TextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+.swift"; sourceTree = "<group>"; };
+		EE2FF7F2289A44A4000349E1 /* InputNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameVC.swift; sourceTree = "<group>"; };
+		EE2FF7F4289A44CF000349E1 /* InputPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordVC.swift; sourceTree = "<group>"; };
+		EE2FF7F6289A44F5000349E1 /* InputBirthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBirthVC.swift; sourceTree = "<group>"; };
 		EEAF6AD82895858D00453AAA /* InstagramChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAF6ADB2895858D00453AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEAF6ADD2895858D00453AAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +47,7 @@
 		EEAF6AE42895859000453AAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEAF6AE72895859000453AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEAF6AE92895859000453AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEB89670289A323700614E0C /* InputCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCodeVC.swift; sourceTree = "<group>"; };
 		EEE0EC8928963E4B007ED8AA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EEFE505B2898F23D00B7247F /* SignUpChoiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpChoiceVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +76,7 @@
 		EE11DAA42897901F00410CC0 /* SignUpScene */ = {
 			isa = PBXGroup;
 			children = (
+				EEB8966F289A321900614E0C /* Input */,
 				EE11DAA52897905200410CC0 /* SignUpTabmanVC.swift */,
 				EE11DAA7289790B400410CC0 /* PhoneSignVC.swift */,
 				EE11DAA9289790BB00410CC0 /* EmailSignVC.swift */,
@@ -73,6 +84,22 @@
 				EEFE505B2898F23D00B7247F /* SignUpChoiceVC.swift */,
 			);
 			path = SignUpScene;
+			sourceTree = "<group>";
+		};
+		EE2FF7EE289A43F6000349E1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EE2FF7EF289A4442000349E1 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EE2FF7EF289A4442000349E1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EE2FF7F0289A4455000349E1 /* TextField+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		EEAF6ACF2895858D00453AAA = {
@@ -96,6 +123,7 @@
 		EEAF6ADA2895858D00453AAA /* InstagramChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				EE2FF7EE289A43F6000349E1 /* Util */,
 				EEAF6AF3289586CA00453AAA /* Model */,
 				EEAF6AF2289586C100453AAA /* Controller */,
 				EEAF6AEF2895869E00453AAA /* View */,
@@ -129,6 +157,17 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EEB8966F289A321900614E0C /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				EEB89670289A323700614E0C /* InputCodeVC.swift */,
+				EE2FF7F2289A44A4000349E1 /* InputNameVC.swift */,
+				EE2FF7F4289A44CF000349E1 /* InputPasswordVC.swift */,
+				EE2FF7F6289A44F5000349E1 /* InputBirthVC.swift */,
+			);
+			path = Input;
 			sourceTree = "<group>";
 		};
 		EEE0EC8B28964943007ED8AA /* LoginScene */ = {
@@ -272,14 +311,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEB89671289A323700614E0C /* InputCodeVC.swift in Sources */,
 				EEAF6AE02895858D00453AAA /* ViewController.swift in Sources */,
 				EE11DAAD28979FF500410CC0 /* SignUpMainVC.swift in Sources */,
 				EEAF6ADC2895858D00453AAA /* AppDelegate.swift in Sources */,
 				EE11DAA8289790B400410CC0 /* PhoneSignVC.swift in Sources */,
 				EE11DAA62897905200410CC0 /* SignUpTabmanVC.swift in Sources */,
 				EEE0EC8A28963E4B007ED8AA /* LoginVC.swift in Sources */,
+				EE2FF7F5289A44CF000349E1 /* InputPasswordVC.swift in Sources */,
+				EE2FF7F1289A4455000349E1 /* TextField+.swift in Sources */,
 				EEAF6ADE2895858D00453AAA /* SceneDelegate.swift in Sources */,
 				EEFE505C2898F23D00B7247F /* SignUpChoiceVC.swift in Sources */,
+				EE2FF7F7289A44F5000349E1 /* InputBirthVC.swift in Sources */,
+				EE2FF7F3289A44A4000349E1 /* InputNameVC.swift in Sources */,
 				EE11DAAA289790BB00410CC0 /* EmailSignVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

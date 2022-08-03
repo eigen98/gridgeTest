@@ -15,12 +15,15 @@ class SignUpTabmanVC : TabmanViewController {
     //상단 탭바에 들어갈 뷰컨 배열(전화번호로 가입, 이메일로 가입)
     private var viewControllers: Array<UIViewController> = []
 
+    
+    
         override func viewDidLoad() {
             super.viewDidLoad()
 
             let phoneVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PhoneSignVC") as! PhoneSignVC
             let emailVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EmailSignVC") as! EmailSignVC
                 
+           
             viewControllers.append(phoneVC)
             viewControllers.append(emailVC)
             
