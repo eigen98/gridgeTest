@@ -11,11 +11,9 @@ import UIKit
 class InputCodeVC : UIViewController {
     
     @IBOutlet weak var nextBtn: UIButton!
-    
     @IBOutlet weak var phoneField: UITextField!
-    
     @IBOutlet weak var clearBtn: UIButton!
-    
+    var signupRequest : SignupRequest? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +21,7 @@ class InputCodeVC : UIViewController {
         attribute()
         
         phoneField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+        print("\(signupRequest!)")
     }
     func attribute(){
         clearBtn.isHidden = true
@@ -32,7 +31,9 @@ class InputCodeVC : UIViewController {
     }
     
     @IBAction func tapNextBtn(_ sender: UIButton) {
-        guard var inputNameVC = self.storyboard?.instantiateViewController(withIdentifier: "InputNameVC") else { return  }
+        guard var inputNameVC = self.storyboard?.instantiateViewController(withIdentifier: "InputNameVC") as? InputNameVC else { return  }
+        
+        inputNameVC.signupRequest = self.signupRequest
         self.navigationController?.pushViewController(inputNameVC, animated: false)
         
     }

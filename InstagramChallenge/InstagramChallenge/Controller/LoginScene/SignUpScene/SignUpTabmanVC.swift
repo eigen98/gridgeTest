@@ -20,8 +20,8 @@ class SignUpTabmanVC : TabmanViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
 
-            let phoneVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PhoneSignVC") as! PhoneSignVC
-            let emailVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EmailSignVC") as! EmailSignVC
+            let phoneVC = UIStoryboard.init(name: "Start", bundle: nil).instantiateViewController(withIdentifier: "PhoneSignVC") as! PhoneSignVC
+            let emailVC = UIStoryboard.init(name: "Start", bundle: nil).instantiateViewController(withIdentifier: "EmailSignVC") as! EmailSignVC
                 
            
             viewControllers.append(phoneVC)

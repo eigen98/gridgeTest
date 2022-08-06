@@ -12,10 +12,9 @@ class InputNameVC : UIViewController {
     
     
     @IBOutlet weak var nameField: UITextField!
-    
     @IBOutlet weak var clearBtn: UIButton!
-    
     @IBOutlet weak var nextBtn: UIButton!
+    var signupRequest : SignupRequest? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +27,7 @@ class InputNameVC : UIViewController {
         clearBtn.isHidden = true
         nextBtn.isEnabled = false
 
-        nameField.keyboardType = .numberPad
+        
     }
     
     @objc func textFieldDidChange(_ sender: Any?) {
@@ -55,7 +54,9 @@ class InputNameVC : UIViewController {
     //다음 버튼
     @IBAction func tapNextBtn(_ sender: UIButton) {
         
-        guard var passwordVC = self.storyboard?.instantiateViewController(withIdentifier: "InputPasswordVC") else { return  }
+        guard var passwordVC = self.storyboard?.instantiateViewController(withIdentifier: "InputPasswordVC") as? InputPasswordVC else { return  }
+        self.signupRequest?.realName = self.nameField.text!
+        passwordVC.signupRequest = self.signupRequest
         self.navigationController?.pushViewController(passwordVC, animated: false)
        
         

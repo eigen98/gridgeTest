@@ -6,3 +6,8 @@
 //
 
 import Foundation
+struct CheckDupIdResponse : Decodable{
+    var isSuccess: Bool
+    var code: Int
+    var message: String
+}

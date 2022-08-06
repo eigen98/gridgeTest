@@ -16,14 +16,37 @@
 		EE2FF7F3289A44A4000349E1 /* InputNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2FF7F2289A44A4000349E1 /* InputNameVC.swift */; };
 		EE2FF7F5289A44CF000349E1 /* InputPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2FF7F4289A44CF000349E1 /* InputPasswordVC.swift */; };
 		EE2FF7F7289A44F5000349E1 /* InputBirthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2FF7F6289A44F5000349E1 /* InputBirthVC.swift */; };
+		EE37196D289B66CC009839BA /* AgreeTermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE37196C289B66CC009839BA /* AgreeTermsVC.swift */; };
+		EE37196F289B670F009839BA /* CreateNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE37196E289B670F009839BA /* CreateNameVC.swift */; };
+		EE371971289B6760009839BA /* FinalSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE371970289B6760009839BA /* FinalSignupVC.swift */; };
+		EE8E7352289E34E70090CE23 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E7351289E34E70090CE23 /* UIButton+.swift */; };
+		EE8E7359289E36D40090CE23 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E7358289E36D40090CE23 /* HomeVC.swift */; };
+		EE8E735B289E3E8B0090CE23 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E735A289E3E8B0090CE23 /* StoryCell.swift */; };
+		EE8E735D289E53C50090CE23 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E735C289E53C50090CE23 /* UIViewController+.swift */; };
+		EE8E735F289E53FB0090CE23 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E735E289E53FB0090CE23 /* IndicatorView.swift */; };
 		EEAF6ADC2895858D00453AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF6ADB2895858D00453AAA /* AppDelegate.swift */; };
 		EEAF6ADE2895858D00453AAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF6ADD2895858D00453AAA /* SceneDelegate.swift */; };
 		EEAF6AE02895858D00453AAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF6ADF2895858D00453AAA /* ViewController.swift */; };
-		EEAF6AE32895858D00453AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE12895858D00453AAA /* Main.storyboard */; };
+		EEAF6AE32895858D00453AAA /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE12895858D00453AAA /* Start.storyboard */; };
 		EEAF6AE52895859000453AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE42895859000453AAA /* Assets.xcassets */; };
 		EEAF6AE82895859000453AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE62895859000453AAA /* LaunchScreen.storyboard */; };
 		EEB89671289A323700614E0C /* InputCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89670289A323700614E0C /* InputCodeVC.swift */; };
+		EEB89D7B289B863D002F63B8 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89D7A289B863D002F63B8 /* PrivateKey.swift */; };
+		EEB89D7E289B88D5002F63B8 /* SignupDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89D7D289B88D5002F63B8 /* SignupDataManager.swift */; };
+		EEB89D80289B899E002F63B8 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89D7F289B899E002F63B8 /* SignupRequest.swift */; };
+		EEB89D82289B8C26002F63B8 /* SignupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89D81289B8C26002F63B8 /* SignupResponse.swift */; };
+		EEB89D86289B98FA002F63B8 /* CheckDupIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89D85289B98FA002F63B8 /* CheckDupIdResponse.swift */; };
+		EEB89D88289BA5A4002F63B8 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89D87289BA5A4002F63B8 /* LoginDataManager.swift */; };
+		EED2F0F1289E108300F008BD /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED2F0F0289E108300F008BD /* FeedCell.swift */; };
+		EED3F0CD289BE86C005E9C7C /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3F0CC289BE86C005E9C7C /* LoginRequest.swift */; };
+		EED3F0CF289BE8E0005E9C7C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3F0CE289BE8E0005E9C7C /* LoginResponse.swift */; };
+		EED3F0D1289BEE0F005E9C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED3F0D0289BEE0F005E9C7C /* Main.storyboard */; };
+		EEE0AF82289E6750000143FB /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0AF81289E6750000143FB /* HomeDataManager.swift */; };
+		EEE0AF88289E67F1000143FB /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0AF87289E67F1000143FB /* FeedResponse.swift */; };
+		EEE0AF8A289E7863000143FB /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0AF89289E7863000143FB /* PostImageCell.swift */; };
+		EEE0AF8C289E84EF000143FB /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0AF8B289E84EF000143FB /* ImageManager.swift */; };
 		EEE0EC8A28963E4B007ED8AA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0EC8928963E4B007ED8AA /* LoginVC.swift */; };
+		EEE6E95E289E5F26005832E8 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE6E95D289E5F26005832E8 /* TokenManager.swift */; };
 		EEFE505C2898F23D00B7247F /* SignUpChoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE505B2898F23D00B7247F /* SignUpChoiceVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,16 +62,39 @@
 		EE2FF7F2289A44A4000349E1 /* InputNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameVC.swift; sourceTree = "<group>"; };
 		EE2FF7F4289A44CF000349E1 /* InputPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordVC.swift; sourceTree = "<group>"; };
 		EE2FF7F6289A44F5000349E1 /* InputBirthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBirthVC.swift; sourceTree = "<group>"; };
+		EE37196C289B66CC009839BA /* AgreeTermsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeTermsVC.swift; sourceTree = "<group>"; };
+		EE37196E289B670F009839BA /* CreateNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNameVC.swift; sourceTree = "<group>"; };
+		EE371970289B6760009839BA /* FinalSignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalSignupVC.swift; sourceTree = "<group>"; };
+		EE8E7351289E34E70090CE23 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		EE8E7358289E36D40090CE23 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		EE8E735A289E3E8B0090CE23 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		EE8E735C289E53C50090CE23 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		EE8E735E289E53FB0090CE23 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		EEAF6AD82895858D00453AAA /* InstagramChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAF6ADB2895858D00453AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEAF6ADD2895858D00453AAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EEAF6ADF2895858D00453AAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EEAF6AE22895858D00453AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEAF6AE22895858D00453AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		EEAF6AE42895859000453AAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEAF6AE72895859000453AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEAF6AE92895859000453AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB89670289A323700614E0C /* InputCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCodeVC.swift; sourceTree = "<group>"; };
+		EEB89D7A289B863D002F63B8 /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		EEB89D7D289B88D5002F63B8 /* SignupDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDataManager.swift; sourceTree = "<group>"; };
+		EEB89D7F289B899E002F63B8 /* SignupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequest.swift; sourceTree = "<group>"; };
+		EEB89D81289B8C26002F63B8 /* SignupResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponse.swift; sourceTree = "<group>"; };
+		EEB89D85289B98FA002F63B8 /* CheckDupIdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDupIdResponse.swift; sourceTree = "<group>"; };
+		EEB89D87289BA5A4002F63B8 /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
+		EED2F0F0289E108300F008BD /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		EED3F0CC289BE86C005E9C7C /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		EED3F0CE289BE8E0005E9C7C /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		EED3F0D0289BEE0F005E9C7C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EEE0AF81289E6750000143FB /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		EEE0AF87289E67F1000143FB /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		EEE0AF89289E7863000143FB /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
+		EEE0AF8B289E84EF000143FB /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		EEE0EC8928963E4B007ED8AA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EEE6E95D289E5F26005832E8 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		EEFE505B2898F23D00B7247F /* SignUpChoiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpChoiceVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +122,7 @@
 		EE11DAA42897901F00410CC0 /* SignUpScene */ = {
 			isa = PBXGroup;
 			children = (
-				EEB8966F289A321900614E0C /* Input */,
+				EEB8966F289A321900614E0C /* InputScene */,
 				EE11DAA52897905200410CC0 /* SignUpTabmanVC.swift */,
 				EE11DAA7289790B400410CC0 /* PhoneSignVC.swift */,
 				EE11DAA9289790BB00410CC0 /* EmailSignVC.swift */,
@@ -90,6 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				EE2FF7EF289A4442000349E1 /* Extension */,
+				EE8E735E289E53FB0090CE23 /* IndicatorView.swift */,
+				EEE6E95D289E5F26005832E8 /* TokenManager.swift */,
+				EEE0AF8B289E84EF000143FB /* ImageManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -98,8 +147,26 @@
 			isa = PBXGroup;
 			children = (
 				EE2FF7F0289A4455000349E1 /* TextField+.swift */,
+				EE8E7351289E34E70090CE23 /* UIButton+.swift */,
+				EE8E735C289E53C50090CE23 /* UIViewController+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EE8E7356289E36A80090CE23 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EE8E7357289E36AB0090CE23 /* Home */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EE8E7357289E36AB0090CE23 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EE8E7358289E36D40090CE23 /* HomeVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		EEAF6ACF2895858D00453AAA = {
@@ -132,6 +199,7 @@
 				EEAF6AE42895859000453AAA /* Assets.xcassets */,
 				EEAF6AE62895859000453AAA /* LaunchScreen.storyboard */,
 				EEAF6AE92895859000453AAA /* Info.plist */,
+				EEB89D7A289B863D002F63B8 /* PrivateKey.swift */,
 			);
 			path = InstagramChallenge;
 			sourceTree = "<group>";
@@ -139,7 +207,9 @@
 		EEAF6AEF2895869E00453AAA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EEAF6AE12895858D00453AAA /* Main.storyboard */,
+				EED2F0EE289E104200F008BD /* Cell */,
+				EEAF6AE12895858D00453AAA /* Start.storyboard */,
+				EED3F0D0289BEE0F005E9C7C /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +217,7 @@
 		EEAF6AF2289586C100453AAA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EE8E7356289E36A80090CE23 /* Main */,
 				EEE0EC8B28964943007ED8AA /* LoginScene */,
 			);
 			path = Controller;
@@ -155,19 +226,105 @@
 		EEAF6AF3289586CA00453AAA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EEB89D75289B81DE002F63B8 /* DataManager */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		EEB8966F289A321900614E0C /* Input */ = {
+		EEB8966F289A321900614E0C /* InputScene */ = {
 			isa = PBXGroup;
 			children = (
 				EEB89670289A323700614E0C /* InputCodeVC.swift */,
 				EE2FF7F2289A44A4000349E1 /* InputNameVC.swift */,
 				EE2FF7F4289A44CF000349E1 /* InputPasswordVC.swift */,
 				EE2FF7F6289A44F5000349E1 /* InputBirthVC.swift */,
+				EE37196C289B66CC009839BA /* AgreeTermsVC.swift */,
+				EE37196E289B670F009839BA /* CreateNameVC.swift */,
+				EE371970289B6760009839BA /* FinalSignupVC.swift */,
 			);
-			path = Input;
+			path = InputScene;
+			sourceTree = "<group>";
+		};
+		EEB89D75289B81DE002F63B8 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EEE0AF80289E663B000143FB /* HomeDataManager */,
+				EEB89D7C289B88C0002F63B8 /* SignupDataManager */,
+				EEB89D79289B8242002F63B8 /* LoginDataManager */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		EEB89D77289B81F6002F63B8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EEB89D7F289B899E002F63B8 /* SignupRequest.swift */,
+				EEB89D81289B8C26002F63B8 /* SignupResponse.swift */,
+				EEB89D85289B98FA002F63B8 /* CheckDupIdResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EEB89D79289B8242002F63B8 /* LoginDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EED3F0CB289BE858005E9C7C /* Entity */,
+				EEB89D87289BA5A4002F63B8 /* LoginDataManager.swift */,
+			);
+			path = LoginDataManager;
+			sourceTree = "<group>";
+		};
+		EEB89D7C289B88C0002F63B8 /* SignupDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EEB89D77289B81F6002F63B8 /* Entity */,
+				EEB89D7D289B88D5002F63B8 /* SignupDataManager.swift */,
+			);
+			path = SignupDataManager;
+			sourceTree = "<group>";
+		};
+		EED2F0EE289E104200F008BD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EED2F0EF289E105400F008BD /* homeCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EED2F0EF289E105400F008BD /* homeCell */ = {
+			isa = PBXGroup;
+			children = (
+				EED2F0F0289E108300F008BD /* FeedCell.swift */,
+				EE8E735A289E3E8B0090CE23 /* StoryCell.swift */,
+				EEE0AF89289E7863000143FB /* PostImageCell.swift */,
+			);
+			path = homeCell;
+			sourceTree = "<group>";
+		};
+		EED3F0CB289BE858005E9C7C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EED3F0CC289BE86C005E9C7C /* LoginRequest.swift */,
+				EED3F0CE289BE8E0005E9C7C /* LoginResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EEE0AF80289E663B000143FB /* HomeDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EEE0AF85289E6773000143FB /* Entity */,
+				EEE0AF81289E6750000143FB /* HomeDataManager.swift */,
+			);
+			path = HomeDataManager;
+			sourceTree = "<group>";
+		};
+		EEE0AF85289E6773000143FB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EEE0AF87289E67F1000143FB /* FeedResponse.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		EEE0EC8B28964943007ED8AA /* LoginScene */ = {
@@ -258,7 +415,8 @@
 			files = (
 				EEAF6AE82895859000453AAA /* LaunchScreen.storyboard in Resources */,
 				EEAF6AE52895859000453AAA /* Assets.xcassets in Resources */,
-				EEAF6AE32895858D00453AAA /* Main.storyboard in Resources */,
+				EEAF6AE32895858D00453AAA /* Start.storyboard in Resources */,
+				EED3F0D1289BEE0F005E9C7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,19 +469,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED2F0F1289E108300F008BD /* FeedCell.swift in Sources */,
+				EEE0AF82289E6750000143FB /* HomeDataManager.swift in Sources */,
+				EE8E7359289E36D40090CE23 /* HomeVC.swift in Sources */,
+				EEE0AF8C289E84EF000143FB /* ImageManager.swift in Sources */,
+				EE8E735D289E53C50090CE23 /* UIViewController+.swift in Sources */,
+				EE8E735B289E3E8B0090CE23 /* StoryCell.swift in Sources */,
 				EEB89671289A323700614E0C /* InputCodeVC.swift in Sources */,
 				EEAF6AE02895858D00453AAA /* ViewController.swift in Sources */,
+				EEB89D86289B98FA002F63B8 /* CheckDupIdResponse.swift in Sources */,
+				EE8E7352289E34E70090CE23 /* UIButton+.swift in Sources */,
 				EE11DAAD28979FF500410CC0 /* SignUpMainVC.swift in Sources */,
+				EEE0AF88289E67F1000143FB /* FeedResponse.swift in Sources */,
+				EEE6E95E289E5F26005832E8 /* TokenManager.swift in Sources */,
+				EEB89D82289B8C26002F63B8 /* SignupResponse.swift in Sources */,
+				EEE0AF8A289E7863000143FB /* PostImageCell.swift in Sources */,
 				EEAF6ADC2895858D00453AAA /* AppDelegate.swift in Sources */,
 				EE11DAA8289790B400410CC0 /* PhoneSignVC.swift in Sources */,
+				EEB89D7B289B863D002F63B8 /* PrivateKey.swift in Sources */,
 				EE11DAA62897905200410CC0 /* SignUpTabmanVC.swift in Sources */,
+				EE37196D289B66CC009839BA /* AgreeTermsVC.swift in Sources */,
 				EEE0EC8A28963E4B007ED8AA /* LoginVC.swift in Sources */,
 				EE2FF7F5289A44CF000349E1 /* InputPasswordVC.swift in Sources */,
 				EE2FF7F1289A4455000349E1 /* TextField+.swift in Sources */,
+				EEB89D88289BA5A4002F63B8 /* LoginDataManager.swift in Sources */,
+				EED3F0CF289BE8E0005E9C7C /* LoginResponse.swift in Sources */,
 				EEAF6ADE2895858D00453AAA /* SceneDelegate.swift in Sources */,
+				EED3F0CD289BE86C005E9C7C /* LoginRequest.swift in Sources */,
+				EE37196F289B670F009839BA /* CreateNameVC.swift in Sources */,
+				EEB89D80289B899E002F63B8 /* SignupRequest.swift in Sources */,
+				EE8E735F289E53FB0090CE23 /* IndicatorView.swift in Sources */,
+				EE371971289B6760009839BA /* FinalSignupVC.swift in Sources */,
 				EEFE505C2898F23D00B7247F /* SignUpChoiceVC.swift in Sources */,
 				EE2FF7F7289A44F5000349E1 /* InputBirthVC.swift in Sources */,
 				EE2FF7F3289A44A4000349E1 /* InputNameVC.swift in Sources */,
+				EEB89D7E289B88D5002F63B8 /* SignupDataManager.swift in Sources */,
 				EE11DAAA289790BB00410CC0 /* EmailSignVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,12 +511,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EEAF6AE12895858D00453AAA /* Main.storyboard */ = {
+		EEAF6AE12895858D00453AAA /* Start.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EEAF6AE22895858D00453AAA /* Base */,
 			);
-			name = Main.storyboard;
+			name = Start.storyboard;
 			sourceTree = "<group>";
 		};
 		EEAF6AE62895859000453AAA /* LaunchScreen.storyboard */ = {
@@ -477,8 +657,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = Main;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = Start;
+				INFOPLIST_KEY_UIMainStoryboardFile = Start;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -509,8 +689,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = Main;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = Start;
+				INFOPLIST_KEY_UIMainStoryboardFile = Start;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

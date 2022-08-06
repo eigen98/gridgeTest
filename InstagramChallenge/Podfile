@@ -8,5 +8,8 @@ target 'InstagramChallenge' do
   # Pods for InstagramChallenge
 	pod 'Tabman', '~> 2.9'
 	pod 'SnapKit', '~> 5.0.0'
+	pod 'Alamofire'
+	pod 'KeychainSwift', '~> 20.0'
+	pod 'Kingfisher', '~> 7.3.0'
 
 end

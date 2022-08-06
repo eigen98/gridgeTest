@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+//전화번호 입력 화면
 class PhoneSignVC : UIViewController {
     
     @IBOutlet weak var phoneField: UITextField!
@@ -16,6 +16,7 @@ class PhoneSignVC : UIViewController {
     
     @IBOutlet weak var nextBtn: UIButton!
     
+    @IBOutlet weak var inputContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,10 @@ class PhoneSignVC : UIViewController {
         nextBtn.isEnabled = false
         
         phoneField.keyboardType = .numberPad
+        inputContainer.layer.cornerRadius = 8
+        inputContainer.layer.borderWidth = 1
+        inputContainer.layer.borderColor = UIColor(red: 0.816, green: 0.816, blue: 0.816, alpha: 1).cgColor
+        
     }
     
     
@@ -42,7 +47,12 @@ class PhoneSignVC : UIViewController {
     }
     @IBAction func tapNextBtn(_ sender: UIButton) {
         print("tap nextBtn")
-        guard let inputCodeVC = self.storyboard?.instantiateViewController(withIdentifier: "InputCodeVC") else { return  }
+        guard let inputCodeVC = self.storyboard?.instantiateViewController(withIdentifier: "InputCodeVC") as? InputCodeVC else { return  }
+        inputCodeVC.signupRequest = SignupRequest(realName: "",
+                                                  password: "",
+                                                  loginId: "",
+                                                  birthDate: "",
+                                                  phoneNumber: self.phoneField.text ?? "")
         let naviVC = UINavigationController(rootViewController: inputCodeVC)
         naviVC.modalPresentationStyle = .fullScreen
         self.present(naviVC, animated: false)

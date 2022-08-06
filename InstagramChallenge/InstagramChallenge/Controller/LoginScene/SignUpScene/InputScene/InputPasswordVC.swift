@@ -15,6 +15,8 @@ class InputPasswordVC : UIViewController {
     @IBOutlet weak var clearBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     
+    var signupRequest : SignupRequest? = nil
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +28,9 @@ class InputPasswordVC : UIViewController {
     func attribute(){
         clearBtn.isHidden = true
         nextBtn.isEnabled = false
+        pwField.keyboardType = .default
 
-        pwField.keyboardType = .numberPad
+        
         
     }
 //
@@ -56,7 +59,9 @@ class InputPasswordVC : UIViewController {
     @IBAction func tapNextBtn(_ sender: UIButton) {
         
         
-        guard var birthVC = self.storyboard?.instantiateViewController(withIdentifier: "InputBirthVC") else { return  }
+        guard var birthVC = self.storyboard?.instantiateViewController(withIdentifier: "InputBirthVC") as? InputBirthVC else { return  }
+        self.signupRequest?.password = self.pwField.text!
+        birthVC.signupRequest = self.signupRequest
         self.navigationController?.pushViewController(birthVC, animated: false)
         
     }

@@ -22,6 +22,8 @@ class InputBirthVC : UIViewController {
     
     @IBOutlet weak var pickerView: UIPickerView!
     
+    var signupRequest : SignupRequest? = nil
+
     var year = 0
     var month = 0
     var day = 0
@@ -74,17 +76,25 @@ class InputBirthVC : UIViewController {
         
         
         dateBtn.setTitle(getTodayDate(), for: .normal)
+        dateBtn.alignTextLeft(spacing: 8)
         oldLabel.isHidden = true
         
     }
-    
+    //다음 버튼 클릭 이벤트
+    @IBAction func tapNextBtn(_ sender: UIButton) {
+        guard var agreeTermsVC = self.storyboard?.instantiateViewController(withIdentifier: "AgreeTermsVC") as? AgreeTermsVC else { return  }
+        print(self.signupRequest)
+        agreeTermsVC.signupRequest = self.signupRequest
+        self.navigationController?.pushViewController(agreeTermsVC, animated: false)
+    }
     //변환 (yyyy년 mm월 dd일)
     func getTodayDate() -> String {
-        let date = Date()
+       
         
-        print(date)
-        let stringFormat = "yyyy-MM-dd HH:mm:ss +SSSZ"
+       
+
         let nowDate = Date() // 현재의 Date (ex: 2020-08-13 09:14:48 +0000)
+        print(nowDate)
         let dateFormatter = DateFormatter()
         
         pickerView.selectRow(99, inComponent: 0, animated: true)// 피커뷰 연도 초기값
@@ -92,8 +102,12 @@ class InputBirthVC : UIViewController {
         pickerView.selectRow(Int(dateFormatter.string(from: nowDate))! - 1, inComponent: 1, animated: true) // 피커뷰 월 초기값
         dateFormatter.dateFormat = "d"
         pickerView.selectRow(Int(dateFormatter.string(from: nowDate))! - 1 , inComponent: 2, animated: true) // 피커뷰 일 초기값
+        dateFormatter.dateFormat = "yyyy.MM.dd"
+        signupRequest?.birthDate = dateFormatter.string(from: nowDate)
         dateFormatter.dateFormat = "yyyy년 MM월 dd일" // 2020-08-13 16:30
         let str = dateFormatter.string(from: nowDate) // 현재 시간의 Date를 format에 맞춰 string으로 반환
+        
+        
         
         //print("not yet transform time is \(tempDate)")
         
@@ -105,32 +119,16 @@ class InputBirthVC : UIViewController {
         pickerView.isHidden = false
     }
     
-//    @IBAction func controlDatePicker(_ sender: UIDatePicker) {
-//        let picker = sender
-//        let dateFormat = DateFormatter()
-//        dateFormat.dateFormat = "yyyy년 M월 d일"
-//        dateBtn.setTitle(dateFormat.string(from: picker.date), for: .normal)
-//        dateBtn.setTitleColor(.black, for: .normal) //선택 후 텍스트 색상 변경
-//        
-//        
-//        dateFormat.dateFormat = "yyyy"
-//        let year = Int(dateFormat.string(from: picker.date))
-//        dateFormat.dateFormat = "M"
-//        let month = Int(dateFormat.string(from: picker.date))
-//        dateFormat.dateFormat = "d"
-//        let day = Int(dateFormat.string(from: picker.date))
-//        
-//        
-//        //나이 출력
-//        oldLabel.text = "\(calcDateGap(yyyy: year!, mm: month!, dd: day!))세"
-//        oldLabel.isHidden = false
-//    }
-    
+
     /*
      나이 계산
      */
     func calcDateGap(yyyy : Int, mm : Int, dd : Int) -> Int{
         var result = 0
+        var yearGap = 0
+        var monthGap = 0
+        var dayGap = 0
+        
         let myDateComponents = DateComponents(year: yyyy, month: mm, day: dd)
         let startDate = Calendar.current.date(from: myDateComponents)!
         
@@ -139,8 +137,10 @@ class InputBirthVC : UIViewController {
         if case let (y?, m?, d?) = (offsetComps.year, offsetComps.month, offsetComps.day) {
             print("\(y)년 \(m)월 \(d)일 만큼 차이남")
             result = y + 1 //만나이 X
+            monthGap = m
+            dayGap = d
         }
-        if result - 1 < 0 {
+        if result < 1 || monthGap < 0 || dayGap < 0 {
             self.oldLabel.isHidden = true
             nextBtn.setImage(UIImage(named: "login_next_disable_btn_img"), for: .normal)
             nextBtn.isEnabled = false
@@ -224,7 +224,45 @@ extension InputBirthVC : UIPickerViewDataSource, UIPickerViewDelegate{
                 day =  Int(dayList[row])!
             }
             
+            
+            
+            
+            var mm = month.description
+            if month < 10{
+                mm = "0\(month)"
+            }
+            var dd = day.description
+            if day < 10{
+                dd = "0\(day)"
+            }
+            
+            if year == 0{
+                let nowDate = Date() // 현재의 Date (ex: 2020-08-13 09:14:48 +0000)
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy"
+                year = Int(dateFormatter.string(from: nowDate))!
+            }
+            if month == 0{
+                let nowDate = Date() // 현재의 Date (ex: 2020-08-13 09:14:48 +0000)
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "MM"
+                mm = dateFormatter.string(from: nowDate)
+                dateFormatter.dateFormat = "M"
+                month = Int(dateFormatter.string(from: nowDate))!
+            }
+            if day == 0{
+                let nowDate = Date() // 현재의 Date (ex: 2020-08-13 09:14:48 +0000)
+                print(nowDate)
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "dd"
+                dd = dateFormatter.string(from: nowDate)
+                dateFormatter.dateFormat = "d"
+                day = Int(dateFormatter.string(from: nowDate))!
+            }
+            
             //나이 출력
+            print("\(year)년 \(month)월 \(day)일")
+            signupRequest?.birthDate = "\(year).\(mm).\(dd)"
             oldLabel.text = "\(calcDateGap(yyyy: year, mm: month, dd: day))세"
             dateBtn.setTitle("\(year)년 \(month)월 \(day)일", for: .normal)
 
