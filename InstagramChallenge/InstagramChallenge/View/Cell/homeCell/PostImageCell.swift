@@ -16,15 +16,24 @@ class PostImageCell : UICollectionViewCell {
     
     
     func layout(){
-        self.addSubview(imageView)
-        self.addSubview(numberContainer)
-        self.numberContainer.addSubview(numberLabel)
         
+        self.contentView.addSubview(imageView)
+        self.contentView.addSubview(numberContainer)
+        self.numberContainer.addSubview(numberLabel)
+//        self.contentView.snp.makeConstraints{
+//            let screenWidth = UIScreen.main.bounds.size.width
+//            $0.width.equalTo(screenWidth)
+//            $0.height.equalTo(333)
+//        }
+        imageView.backgroundColor = .white
         imageView.snp.makeConstraints{
+            
            
-            $0.width.equalTo(375)
-            $0.height.equalTo(339)
-            $0.leading.height.top.bottom.equalToSuperview()
+            $0.leading.equalToSuperview()
+            $0.trailing.equalToSuperview()
+            $0.bottom.equalToSuperview()
+            $0.top.equalToSuperview()
+            
         }
         
         numberContainer.snp.makeConstraints{
@@ -33,7 +42,7 @@ class PostImageCell : UICollectionViewCell {
             $0.width.equalTo(34)
             $0.height.equalTo(26)
         }
-        
+
         numberLabel.snp.makeConstraints{
             $0.centerX.equalTo(numberContainer.snp.centerX)
             $0.centerY.equalTo(numberContainer.snp.centerY)
@@ -58,5 +67,12 @@ class PostImageCell : UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+   
     
+}
+extension UITableViewCell {
+    open override func addSubview(_ view: UIView) {
+        super.addSubview(view)
+        sendSubviewToBack(contentView)
+    }
 }

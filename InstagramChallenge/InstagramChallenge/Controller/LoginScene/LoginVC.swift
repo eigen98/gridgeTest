@@ -28,6 +28,7 @@ class LoginVC : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dismissKeyboardWhenTappedAround()
         
         
     }
@@ -79,6 +80,8 @@ extension LoginVC {
         let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = mainStoryBoard.instantiateViewController(withIdentifier: "TabbarVC")
         vc.modalPresentationStyle = .fullScreen
+        var myDataManager = MyPageDataManager()
+        myDataManager.getMyName()
         present(vc, animated: false)
     }
     func failLogin(id : String){

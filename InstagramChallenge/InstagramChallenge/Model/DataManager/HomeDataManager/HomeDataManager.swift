@@ -11,10 +11,10 @@ import Alamofire
 class HomeDataManager {
     let keychain = TokenManager.sharedKeyChain
     //피드
-    func getFeedContents(page : Int , vc: HomeVC) {
+    func getFeedContents( vc: HomeVC) {
         
         let token = "\(String(describing: keychain.get("jwt")!))"
-        
+        let page = vc.feedContentsList.count/10
         let url = "\(Constant.BASE_URL)/app/feeds?pageIndex=\(page)&size=10"
         
         let header: HTTPHeaders = [ "Content-Type":"application/json",
@@ -29,7 +29,7 @@ class HomeDataManager {
                     case 1000:
                         print(response)
                         vc.didSuccessFeedLoad(contents: response.result ?? [])
-                        
+                        //vc.paging(feeds: response.result ?? [])
                         break
                     default:
                         print(response)

@@ -23,6 +23,7 @@ class SignupDataManager{
                         case .success(let response):
                             switch response.code {
                             case 1000: //성공
+                                
                                 delegate.availableId()
                                 break
                             default:
@@ -55,6 +56,8 @@ class SignupDataManager{
                     case 1000:
                         let keyChain = TokenManager.sharedKeyChain
                         keyChain.set((response.result?.jwt)!,forKey: "jwt")
+                        UserDefaults.standard.set(parameters.loginId, forKey: "loginId")
+                        UserDefaults.standard.set(parameters.realName, forKey: "userName")
                         delegate.didSuccessSignup()
                         print(response)
                         break

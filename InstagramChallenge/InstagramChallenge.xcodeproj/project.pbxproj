@@ -24,12 +24,25 @@
 		EE8E735B289E3E8B0090CE23 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E735A289E3E8B0090CE23 /* StoryCell.swift */; };
 		EE8E735D289E53C50090CE23 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E735C289E53C50090CE23 /* UIViewController+.swift */; };
 		EE8E735F289E53FB0090CE23 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E735E289E53FB0090CE23 /* IndicatorView.swift */; };
+		EE8E92F6289FADCE00B00E7B /* NewPostDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E92F5289FADCE00B00E7B /* NewPostDataManager.swift */; };
+		EE8E92F9289FAE2B00B00E7B /* NewFeedReqeust.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E92F8289FAE2B00B00E7B /* NewFeedReqeust.swift */; };
+		EE8E92FB289FAF1000B00E7B /* NewFeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E92FA289FAF1000B00E7B /* NewFeedResponse.swift */; };
+		EE8E92FF289FB17900B00E7B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8E92FE289FB17900B00E7B /* GoogleService-Info.plist */; };
+		EE8E9302289FB2D000B00E7B /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E9301289FB2D000B00E7B /* FirebaseStorageManager.swift */; };
+		EE8E9305289FB9B200B00E7B /* MyPageDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E9304289FB9B200B00E7B /* MyPageDataManager.swift */; };
+		EE8E9309289FBAE600B00E7B /* MyPageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E9308289FBAE600B00E7B /* MyPageResponse.swift */; };
+		EE8E930C289FC06B00B00E7B /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E930B289FC06B00B00E7B /* MyPageVC.swift */; };
+		EE8E930E289FC80300B00E7B /* MyPageTabmanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E930D289FC80300B00E7B /* MyPageTabmanVC.swift */; };
 		EEAF6ADC2895858D00453AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF6ADB2895858D00453AAA /* AppDelegate.swift */; };
 		EEAF6ADE2895858D00453AAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF6ADD2895858D00453AAA /* SceneDelegate.swift */; };
 		EEAF6AE02895858D00453AAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF6ADF2895858D00453AAA /* ViewController.swift */; };
 		EEAF6AE32895858D00453AAA /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE12895858D00453AAA /* Start.storyboard */; };
 		EEAF6AE52895859000453AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE42895859000453AAA /* Assets.xcassets */; };
 		EEAF6AE82895859000453AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAF6AE62895859000453AAA /* LaunchScreen.storyboard */; };
+		EEB3E49B289FDBDF000D6FB1 /* MyFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3E49A289FDBDF000D6FB1 /* MyFeedVC.swift */; };
+		EEB3E49D289FDBE9000D6FB1 /* MyTagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3E49C289FDBE9000D6FB1 /* MyTagVC.swift */; };
+		EEB3E49F289FE2F2000D6FB1 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3E49E289FE2F2000D6FB1 /* LoadingCell.swift */; };
+		EEB3E4A1289FE37C000D6FB1 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3E4A0289FE37C000D6FB1 /* UITableViewCell+.swift */; };
 		EEB89671289A323700614E0C /* InputCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89670289A323700614E0C /* InputCodeVC.swift */; };
 		EEB89D7B289B863D002F63B8 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89D7A289B863D002F63B8 /* PrivateKey.swift */; };
 		EEB89D7E289B88D5002F63B8 /* SignupDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89D7D289B88D5002F63B8 /* SignupDataManager.swift */; };
@@ -37,6 +50,7 @@
 		EEB89D82289B8C26002F63B8 /* SignupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89D81289B8C26002F63B8 /* SignupResponse.swift */; };
 		EEB89D86289B98FA002F63B8 /* CheckDupIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89D85289B98FA002F63B8 /* CheckDupIdResponse.swift */; };
 		EEB89D88289BA5A4002F63B8 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB89D87289BA5A4002F63B8 /* LoginDataManager.swift */; };
+		EEC0F06D289FA3C00011F535 /* NewPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC0F06C289FA3C00011F535 /* NewPostVC.swift */; };
 		EED2F0F1289E108300F008BD /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED2F0F0289E108300F008BD /* FeedCell.swift */; };
 		EED3F0CD289BE86C005E9C7C /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3F0CC289BE86C005E9C7C /* LoginRequest.swift */; };
 		EED3F0CF289BE8E0005E9C7C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3F0CE289BE8E0005E9C7C /* LoginResponse.swift */; };
@@ -70,6 +84,15 @@
 		EE8E735A289E3E8B0090CE23 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
 		EE8E735C289E53C50090CE23 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		EE8E735E289E53FB0090CE23 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		EE8E92F5289FADCE00B00E7B /* NewPostDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostDataManager.swift; sourceTree = "<group>"; };
+		EE8E92F8289FAE2B00B00E7B /* NewFeedReqeust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedReqeust.swift; sourceTree = "<group>"; };
+		EE8E92FA289FAF1000B00E7B /* NewFeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedResponse.swift; sourceTree = "<group>"; };
+		EE8E92FE289FB17900B00E7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE8E9301289FB2D000B00E7B /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
+		EE8E9304289FB9B200B00E7B /* MyPageDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageDataManager.swift; sourceTree = "<group>"; };
+		EE8E9308289FBAE600B00E7B /* MyPageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageResponse.swift; sourceTree = "<group>"; };
+		EE8E930B289FC06B00B00E7B /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
+		EE8E930D289FC80300B00E7B /* MyPageTabmanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTabmanVC.swift; sourceTree = "<group>"; };
 		EEAF6AD82895858D00453AAA /* InstagramChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAF6ADB2895858D00453AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEAF6ADD2895858D00453AAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +101,10 @@
 		EEAF6AE42895859000453AAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEAF6AE72895859000453AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEAF6AE92895859000453AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEB3E49A289FDBDF000D6FB1 /* MyFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedVC.swift; sourceTree = "<group>"; };
+		EEB3E49C289FDBE9000D6FB1 /* MyTagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTagVC.swift; sourceTree = "<group>"; };
+		EEB3E49E289FE2F2000D6FB1 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		EEB3E4A0289FE37C000D6FB1 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 		EEB89670289A323700614E0C /* InputCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCodeVC.swift; sourceTree = "<group>"; };
 		EEB89D7A289B863D002F63B8 /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
 		EEB89D7D289B88D5002F63B8 /* SignupDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDataManager.swift; sourceTree = "<group>"; };
@@ -85,6 +112,7 @@
 		EEB89D81289B8C26002F63B8 /* SignupResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponse.swift; sourceTree = "<group>"; };
 		EEB89D85289B98FA002F63B8 /* CheckDupIdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDupIdResponse.swift; sourceTree = "<group>"; };
 		EEB89D87289BA5A4002F63B8 /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
+		EEC0F06C289FA3C00011F535 /* NewPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostVC.swift; sourceTree = "<group>"; };
 		EED2F0F0289E108300F008BD /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		EED3F0CC289BE86C005E9C7C /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		EED3F0CE289BE8E0005E9C7C /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -149,6 +177,7 @@
 				EE2FF7F0289A4455000349E1 /* TextField+.swift */,
 				EE8E7351289E34E70090CE23 /* UIButton+.swift */,
 				EE8E735C289E53C50090CE23 /* UIViewController+.swift */,
+				EEB3E4A0289FE37C000D6FB1 /* UITableViewCell+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -156,6 +185,8 @@
 		EE8E7356289E36A80090CE23 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EE8E930A289FC05500B00E7B /* MyPage */,
+				EEC0F06E289FA3C50011F535 /* NewPost */,
 				EE8E7357289E36AB0090CE23 /* Home */,
 			);
 			path = Main;
@@ -167,6 +198,60 @@
 				EE8E7358289E36D40090CE23 /* HomeVC.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		EE8E92F4289FADB800B00E7B /* NewPostDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE8E92F7289FADD000B00E7B /* Entity */,
+				EE8E92F5289FADCE00B00E7B /* NewPostDataManager.swift */,
+			);
+			path = NewPostDataManager;
+			sourceTree = "<group>";
+		};
+		EE8E92F7289FADD000B00E7B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EE8E92F8289FAE2B00B00E7B /* NewFeedReqeust.swift */,
+				EE8E92FA289FAF1000B00E7B /* NewFeedResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EE8E9300289FB2C200B00E7B /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE8E9301289FB2D000B00E7B /* FirebaseStorageManager.swift */,
+			);
+			path = StorageManager;
+			sourceTree = "<group>";
+		};
+		EE8E9303289FB9A100B00E7B /* MyPageDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE8E9306289FB9B500B00E7B /* Entity */,
+				EE8E9304289FB9B200B00E7B /* MyPageDataManager.swift */,
+			);
+			path = MyPageDataManager;
+			sourceTree = "<group>";
+		};
+		EE8E9306289FB9B500B00E7B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EE8E9308289FBAE600B00E7B /* MyPageResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EE8E930A289FC05500B00E7B /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				EE8E930B289FC06B00B00E7B /* MyPageVC.swift */,
+				EE8E930D289FC80300B00E7B /* MyPageTabmanVC.swift */,
+				EEB3E49A289FDBDF000D6FB1 /* MyFeedVC.swift */,
+				EEB3E49C289FDBE9000D6FB1 /* MyTagVC.swift */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		EEAF6ACF2895858D00453AAA = {
@@ -198,6 +283,7 @@
 				EEAF6ADD2895858D00453AAA /* SceneDelegate.swift */,
 				EEAF6AE42895859000453AAA /* Assets.xcassets */,
 				EEAF6AE62895859000453AAA /* LaunchScreen.storyboard */,
+				EE8E92FE289FB17900B00E7B /* GoogleService-Info.plist */,
 				EEAF6AE92895859000453AAA /* Info.plist */,
 				EEB89D7A289B863D002F63B8 /* PrivateKey.swift */,
 			);
@@ -226,6 +312,7 @@
 		EEAF6AF3289586CA00453AAA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE8E9300289FB2C200B00E7B /* StorageManager */,
 				EEB89D75289B81DE002F63B8 /* DataManager */,
 			);
 			path = Model;
@@ -248,6 +335,8 @@
 		EEB89D75289B81DE002F63B8 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				EE8E9303289FB9A100B00E7B /* MyPageDataManager */,
+				EE8E92F4289FADB800B00E7B /* NewPostDataManager */,
 				EEE0AF80289E663B000143FB /* HomeDataManager */,
 				EEB89D7C289B88C0002F63B8 /* SignupDataManager */,
 				EEB89D79289B8242002F63B8 /* LoginDataManager */,
@@ -283,6 +372,14 @@
 			path = SignupDataManager;
 			sourceTree = "<group>";
 		};
+		EEC0F06E289FA3C50011F535 /* NewPost */ = {
+			isa = PBXGroup;
+			children = (
+				EEC0F06C289FA3C00011F535 /* NewPostVC.swift */,
+			);
+			path = NewPost;
+			sourceTree = "<group>";
+		};
 		EED2F0EE289E104200F008BD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +394,7 @@
 				EED2F0F0289E108300F008BD /* FeedCell.swift */,
 				EE8E735A289E3E8B0090CE23 /* StoryCell.swift */,
 				EEE0AF89289E7863000143FB /* PostImageCell.swift */,
+				EEB3E49E289FE2F2000D6FB1 /* LoadingCell.swift */,
 			);
 			path = homeCell;
 			sourceTree = "<group>";
@@ -417,6 +515,7 @@
 				EEAF6AE52895859000453AAA /* Assets.xcassets in Resources */,
 				EEAF6AE32895858D00453AAA /* Start.storyboard in Resources */,
 				EED3F0D1289BEE0F005E9C7C /* Main.storyboard in Resources */,
+				EE8E92FF289FB17900B00E7B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,16 +568,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8E92F6289FADCE00B00E7B /* NewPostDataManager.swift in Sources */,
 				EED2F0F1289E108300F008BD /* FeedCell.swift in Sources */,
+				EE8E9305289FB9B200B00E7B /* MyPageDataManager.swift in Sources */,
 				EEE0AF82289E6750000143FB /* HomeDataManager.swift in Sources */,
 				EE8E7359289E36D40090CE23 /* HomeVC.swift in Sources */,
 				EEE0AF8C289E84EF000143FB /* ImageManager.swift in Sources */,
 				EE8E735D289E53C50090CE23 /* UIViewController+.swift in Sources */,
+				EE8E9302289FB2D000B00E7B /* FirebaseStorageManager.swift in Sources */,
+				EEC0F06D289FA3C00011F535 /* NewPostVC.swift in Sources */,
+				EEB3E4A1289FE37C000D6FB1 /* UITableViewCell+.swift in Sources */,
 				EE8E735B289E3E8B0090CE23 /* StoryCell.swift in Sources */,
 				EEB89671289A323700614E0C /* InputCodeVC.swift in Sources */,
 				EEAF6AE02895858D00453AAA /* ViewController.swift in Sources */,
 				EEB89D86289B98FA002F63B8 /* CheckDupIdResponse.swift in Sources */,
 				EE8E7352289E34E70090CE23 /* UIButton+.swift in Sources */,
+				EE8E9309289FBAE600B00E7B /* MyPageResponse.swift in Sources */,
 				EE11DAAD28979FF500410CC0 /* SignUpMainVC.swift in Sources */,
 				EEE0AF88289E67F1000143FB /* FeedResponse.swift in Sources */,
 				EEE6E95E289E5F26005832E8 /* TokenManager.swift in Sources */,
@@ -496,14 +601,21 @@
 				EED3F0CF289BE8E0005E9C7C /* LoginResponse.swift in Sources */,
 				EEAF6ADE2895858D00453AAA /* SceneDelegate.swift in Sources */,
 				EED3F0CD289BE86C005E9C7C /* LoginRequest.swift in Sources */,
+				EE8E92FB289FAF1000B00E7B /* NewFeedResponse.swift in Sources */,
 				EE37196F289B670F009839BA /* CreateNameVC.swift in Sources */,
 				EEB89D80289B899E002F63B8 /* SignupRequest.swift in Sources */,
 				EE8E735F289E53FB0090CE23 /* IndicatorView.swift in Sources */,
 				EE371971289B6760009839BA /* FinalSignupVC.swift in Sources */,
+				EE8E930C289FC06B00B00E7B /* MyPageVC.swift in Sources */,
 				EEFE505C2898F23D00B7247F /* SignUpChoiceVC.swift in Sources */,
+				EE8E930E289FC80300B00E7B /* MyPageTabmanVC.swift in Sources */,
+				EE8E92F9289FAE2B00B00E7B /* NewFeedReqeust.swift in Sources */,
 				EE2FF7F7289A44F5000349E1 /* InputBirthVC.swift in Sources */,
+				EEB3E49F289FE2F2000D6FB1 /* LoadingCell.swift in Sources */,
+				EEB3E49B289FDBDF000D6FB1 /* MyFeedVC.swift in Sources */,
 				EE2FF7F3289A44A4000349E1 /* InputNameVC.swift in Sources */,
 				EEB89D7E289B88D5002F63B8 /* SignupDataManager.swift in Sources */,
+				EEB3E49D289FDBE9000D6FB1 /* MyTagVC.swift in Sources */,
 				EE11DAAA289790BB00410CC0 /* EmailSignVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,6 +768,11 @@
 				DEVELOPMENT_TEAM = FXFMS96RM6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근 권한이 필요합니다. ";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "비디오 녹음을 위한 사용 권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진 라이브러리 접근 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Start;
 				INFOPLIST_KEY_UIMainStoryboardFile = Start;
@@ -688,6 +805,11 @@
 				DEVELOPMENT_TEAM = FXFMS96RM6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근 권한이 필요합니다. ";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "비디오 녹음을 위한 사용 권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진 라이브러리 접근 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Start;
 				INFOPLIST_KEY_UIMainStoryboardFile = Start;

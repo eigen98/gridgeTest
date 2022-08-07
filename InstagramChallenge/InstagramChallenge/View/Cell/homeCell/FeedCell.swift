@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Kingfisher
 //게시글 셀
-class FeedCell : UITableViewCell {
+class FeedCell : UITableViewCell , UIScrollViewDelegate{
     
     var images : [Content]?
     
@@ -46,24 +46,32 @@ class FeedCell : UITableViewCell {
         return button
     }()
     
-//    //이미지
-//    lazy var postImageView : UIImageView = {
-//        let imageView = UIImageView()
-//        imageView.backgroundColor = .tertiaryLabel
-//        return imageView
-//    }()
+    private let collectionViewFlowLayout: UICollectionViewFlowLayout = {
+      let layout = UICollectionViewFlowLayout()
+      layout.scrollDirection = .horizontal
+      layout.minimumLineSpacing = 8.0
+      layout.minimumInteritemSpacing = 0
+        layout.estimatedItemSize = .zero
+      return layout
+    }()
+
     //이미지 컬렉션 뷰
-    private lazy var postImageCollectionView : UICollectionView = {
+    lazy var postImageCollectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-//        layout.minimumLineSpacing = 0.5
-//        layout.minimumInteritemSpacing = 0.5
-        layout.scrollDirection = .horizontal
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        layout.minimumLineSpacing = 0.5
+        layout.minimumInteritemSpacing = 0.5
+//        layout.scrollDirection = .horizontal
+//        let screenWidth = UIScreen.main.bounds.size.width
+//        //layout.sectionInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+//        layout.itemSize = CGSize(width: screenWidth, height: 333)
+        
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewFlowLayout)
         collectionView.backgroundColor = .gray
         collectionView.register(PostImageCell.self, forCellWithReuseIdentifier: "PostImageCell")
-        collectionView.dataSource = self
-        collectionView.delegate = self
+        collectionView.isUserInteractionEnabled = true
+        collectionView.showsVerticalScrollIndicator = true
         collectionView.isScrollEnabled = true
+        
         
         
         return collectionView
@@ -162,12 +170,16 @@ class FeedCell : UITableViewCell {
             $0.height.equalTo(3)
         }
         
+        let screenWidth = UIScreen.main.bounds.size.width
         postImageCollectionView.snp.makeConstraints{
             $0.leading.equalToSuperview()
-            $0.trailing.equalToSuperview()
+            //$0.trailing.equalToSuperview()
+            $0.width.equalTo(screenWidth)
             $0.top.equalTo(profileImgView.snp.bottom).offset(10)
-            $0.height.equalTo(postImageCollectionView.snp.width)
+            $0.height.equalTo(333)
+
         }
+        
         
         let buttonWidth : CGFloat = 24.0
         let buttonInset : CGFloat = 16.0
@@ -226,8 +238,18 @@ class FeedCell : UITableViewCell {
         self.contentsLabel.text = feedResult?.feedText
         self.userNameLabel.text = feedResult?.feedLoginId
         self.images = feedResult?.contentsList
-        postImageCollectionView.reloadData()
-    
+        
+        
+        postImageCollectionView.dataSource = self
+        postImageCollectionView.delegate = self
+        postImageCollectionView.isScrollEnabled = true
+        
+        self.postImageCollectionView.reloadData()
+        postImageCollectionView.isUserInteractionEnabled = true
+        postImageCollectionView.showsHorizontalScrollIndicator = false
+        postImageCollectionView.isScrollEnabled = true
+        postImageCollectionView.isPagingEnabled = true
+       
     }
     
     
@@ -235,6 +257,8 @@ class FeedCell : UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         layout()
+        
+        //collectionView.showsHorizontalScrollIndicator = false
         
         
     }
@@ -247,20 +271,34 @@ class FeedCell : UITableViewCell {
     
 }
 
-extension FeedCell : UICollectionViewDelegate, UICollectionViewDataSource{
+extension FeedCell : UICollectionViewDataSource{
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
-        return images?.count ?? 0
+        return images!.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostImageCell", for: indexPath) as! PostImageCell
-        cell.numberLabel.text = "1/\(images!.count)"
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostImageCell", for: indexPath) as? PostImageCell else {
+            return UICollectionViewCell()
+        }
+        cell.numberLabel.text = "\(indexPath.row + 1)/\(images!.count)"
         let url = URL(string: self.images![indexPath.row].contentsUrl)
         cell.imageView.kf.setImage(with: url)
         return cell
     }
     
+
+
     
-    
+}
+//사이즈 설정
+extension FeedCell : UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width : CGFloat = (collectionView.frame.width)
+        
+        return CGSize(width: width, height: 333)
+    }
 }

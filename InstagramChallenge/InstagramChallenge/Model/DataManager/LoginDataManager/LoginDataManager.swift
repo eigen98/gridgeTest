@@ -25,6 +25,8 @@ class LoginDataManager {
                     case 1000:
                         let keyChain = TokenManager.sharedKeyChain
                         keyChain.set((response.result?.jwt)!,forKey: "jwt")
+                        UserDefaults.standard.set(parameters.loginId, forKey: "loginId")
+                        
                         print(response)
                         delegate.didSucessLogin()
                         
